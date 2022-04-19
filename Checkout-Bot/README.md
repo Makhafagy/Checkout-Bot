@@ -1,6 +1,6 @@
-# Phoenix Bot
+# Checkout bot 254
 [Discord](https://discord.gg/mTp4awX9wB)<br/><br/>
-Trackster is inspired by Phoenix Bot. Currently, this auto-checkout bot will support Walmart, Best Buy, Gamestop, & Target. There are more plans for future implementations later on. 
+Checkout bot 254 is inspired by Phoenix Bot. Currently, this auto-checkout bot will support Walmart, Best Buy, Gamestop, & Target. There are more plans for future implementations later on. 
 
 * Easy to use interface built on PyQt5
 * Waits for items to restock if they are out of stock
