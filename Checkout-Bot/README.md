@@ -1,6 +1,6 @@
-# Checkout bot 254
+# Trackster
 [Discord](https://discord.gg/mTp4awX9wB)<br/><br/>
-Checkout bot 254 is inspired by Phoenix Bot. Currently, this auto-checkout bot will support Walmart, Best Buy, Gamestop, & Target. There are more plans for future implementations later on. 
+Trackster is inspired by Phoenix Bot. Currently, this auto-checkout bot will support Walmart, Best Buy, Gamestop, & Target. There are more plans for future implementations later on. 
 
 * Easy to use interface built on PyQt5
 * Waits for items to restock if they are out of stock
@@ -28,6 +28,9 @@ Target Signin error work around - Wait for target browser to launch, once it's r
 
 ## Phoenix Bot Repository Link
 [View The Repo Here](https://github.com/Strip3s/PhoenixBot.git/)
+
+## Trackster Repository Link
+[View The Repo Here](https://github.com/Makhafagy/Checkout-Bot/edit/main/Checkout-Bot/)
 
 ## Quick Install for Windows
 1. Make sure your Chrome browser is updated to the latest
