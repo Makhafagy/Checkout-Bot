@@ -30,7 +30,7 @@ Target Signin error work around - Wait for target browser to launch, once it's r
 [View The Repo Here](https://github.com/Strip3s/PhoenixBot.git/)
 
 ## Trackster Repository Link
-[View The Repo Here](https://github.com/Makhafagy/Checkout-Bot/edit/main/Checkout-Bot/)
+[View The Repo Here](https://github.com/Makhafagy/Checkout-Bot.git)
 
 ## Quick Install for Windows
 1. Make sure your Chrome browser is updated to the latest
@@ -38,10 +38,10 @@ Target Signin error work around - Wait for target browser to launch, once it's r
 3. Open Powershell as Administrator within your desired directory for the application to live.
 4. Run the following commands: 
       ```
-      git clone https://github.com/Strip3s/PhoenixBot/
+      git clone https://github.com/Makhafagy/Checkout-Bot.git
       ```
       ```
-      cd PhoenixBot
+      cd Checkout-Bot
       ```
       ```
       python -m venv ./env
@@ -84,10 +84,10 @@ Target Signin error work around - Wait for target browser to launch, once it's r
 1. Make sure your Chrome browser is updated to the latest
 2. Run the following commands: 
       ```
-      git clone https://github.com/Strip3s/PhoenixBot/
+      git clone https://github.com/Makhafagy/Checkout-Bot.git
       ```
       ```
-      cd Checkout-bot
+      cd Checkout-Bot
       ```
       ```
       python3 -m venv ./env
