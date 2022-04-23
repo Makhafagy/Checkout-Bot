@@ -1,5 +1,4 @@
 # Trackster
-[Discord](https://discord.gg/mTp4awX9wB)<br/><br/>
 Trackster is inspired by Phoenix Bot. Currently, this auto-checkout bot will support Walmart, Best Buy, Gamestop, & Target. There are more plans for future implementations later on. 
 
 * Easy to use interface built on PyQt5
