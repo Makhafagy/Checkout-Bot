@@ -1,5 +1,5 @@
 # Checkout-Bot
-#CSUF
+# CSUF
 # Mahmoud Khafagy, Timothy Bryant, Ben Filler
 
 * Easy to use interface built on PyQt5
