@@ -6,7 +6,7 @@ Group Members: Mahmoud Khafagy, Timothy Bryant, Ben Filler
 * Easy to use interface built on PyQt5
 * Waits for items to restock if they are out of stock
 * Optional price checker
-* Lighting fast auto-checkout
+* Lightning fast auto-checkout
 
 ## Current Functionality
 
