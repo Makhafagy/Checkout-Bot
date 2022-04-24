@@ -40,8 +40,8 @@ if platform.system() == "Windows":
 else:
     init()
 
-print(normal_color + "Welcome To Phoenix Bot - In times of crisis, "
-                     "the wise build bridges while the foolish build barriers.")
+print(normal_color + "Welcome To Checkout-Bot - This is a CPSC 254 Open-Source Project, "
+                     "May The Force Be With You!")
 
 
 class BirdLogger:
