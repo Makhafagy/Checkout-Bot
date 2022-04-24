@@ -1,6 +1,7 @@
-# Checkout-Bot
 # CSUF
-# Mahmoud Khafagy, Timothy Bryant, Ben Filler
+Group Members: Mahmoud Khafagy, Timothy Bryant, Ben Filler
+
+# Checkout-Bot
 
 * Easy to use interface built on PyQt5
 * Waits for items to restock if they are out of stock
