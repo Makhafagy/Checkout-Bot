@@ -20,7 +20,10 @@ Gamestop - Captcha work-arounds in progress, will attempt to add to cart current
 Target Signin error work around - Wait for target browser to launch, once it's refreshing on product page, open new tab in browser, navigate to target.com and signin manually, then close that tab.
 
 <p align="center">
-  <img src="https://i.imgur.com/Vrdn1NJ.png" alt="Checkout-Bot UI" width="738">
+  <img src="https://i.imgur.com/W1TMbpN.png" alt="Homepage" width="738">
+  <img src="https://i.imgur.com/vvagNWL.png" alt="Profiles" width="738">
+  <img src="https://i.imgur.com/KhdRiTS.png" alt="Proxies" width="738">
+  <img src="https://i.imgur.com/WPXqTFA.png" alt="Settings" width="738">
 </p>
 
 
