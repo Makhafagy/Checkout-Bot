@@ -118,7 +118,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self.profiles_tab.mousePressEvent = lambda event: self.change_page(event, "profiles")
         self.proxies_tab.mousePressEvent = lambda event: self.change_page(event, "proxies")
         self.settings_tab.mousePressEvent = lambda event: self.change_page(event, "settings")
-        self.settings_tab.mousePressEvent = lambda event: self.change_page(event, "summary") # SUMMARY PRESSABLE ICON
+        #self.settings_tab.mousePressEvent = lambda event: self.change_page(event, "summary") # SUMMARY PRESSABLE ICON
         self.homepage.newtask_btn.clicked.connect(self.createdialog.show)
         
     def change_page(self,event,current_page):
