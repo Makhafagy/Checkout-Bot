@@ -35,7 +35,7 @@ Target Signin error work around - Wait for target browser to launch, once it's r
 
 ## Quick Install for Windows
 1. Make sure your Chrome browser is updated to the latest
-2. Install the latest version of [Git](https://git-scm.com/downloads) & [Python](https://www.python.org/downloads/)
+2. Install the latest version of [Git](https://git-scm.com/downloads) & [Python3.9](https://www.python.org/downloads/)
 3. Open Powershell as Administrator within your desired directory for the application to live.
 4. Run the following commands: 
       ```

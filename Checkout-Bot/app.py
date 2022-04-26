@@ -1,12 +1,11 @@
-from theming.styles import globalStyles
 from PyQt5 import QtCore, QtGui, QtWidgets
 from pages.homepage import HomePage, TaskTab
 from pages.createdialog import CreateDialog
 from pages.profilespage import ProfilesPage
 from pages.proxiespage import ProxiesPage
 from pages.settingspage import SettingsPage
-from pages.pollbrowser import PollBrowserDialog
-import sys, os, settings
+import sys
+import os
 from theming.styles import globalStyles
 
 
@@ -26,6 +25,7 @@ class MainWindow(QtWidgets.QMainWindow):
 
     def setupUi(self, MainWindow):
         MainWindow.setFixedSize(1109, 600)
+
         # background color for main UI
         MainWindow.setStyleSheet("background-color: {};".format(globalStyles["backgroundDark"]))
         MainWindow.setWindowTitle("Checkout-Bot")
@@ -33,16 +33,19 @@ class MainWindow(QtWidgets.QMainWindow):
         self.centralwidget.setStyleSheet("QMessageBox QLabel { color: #FFFFFF; }QMessageBox QPushButton { background-color: %s;color: #FFFFFF;}" % (globalStyles["primary"]) )
         self.sidebar = QtWidgets.QWidget(self.centralwidget)
         self.sidebar.setGeometry(QtCore.QRect(0, 0, 61, 601))
-        # SIDE BAR COLOR
+
+        # sidebar color
         self.sidebar.setStyleSheet('background-color: {};border-right: 1px solid #2e2d2d;'.format(globalStyles['backgroundLight']))
         self.home_tab = QtWidgets.QWidget(self.sidebar)
         self.home_tab.setGeometry(QtCore.QRect(0, 85, 60, 45))
         self.home_tab.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        #initial selected color background
+
+        # initial selected color background
         self.home_tab.setStyleSheet("background-color: {};border: none;".format(globalStyles['primaryAscent']))
         self.home_active_tab = QtWidgets.QWidget(self.home_tab)
         self.home_active_tab.setGeometry(QtCore.QRect(0, 0, 4, 45))
-        #initial selected color side bar
+
+        # initial selected color side bar
         self.home_active_tab.setStyleSheet("background-color: {};border: none;".format(globalStyles["primary"]))
         self.home_active_tab.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.home_icon = QtWidgets.QLabel(self.home_tab)
@@ -118,22 +121,25 @@ class MainWindow(QtWidgets.QMainWindow):
         self.profiles_tab.mousePressEvent = lambda event: self.change_page(event, "profiles")
         self.proxies_tab.mousePressEvent = lambda event: self.change_page(event, "proxies")
         self.settings_tab.mousePressEvent = lambda event: self.change_page(event, "settings")
-        #self.settings_tab.mousePressEvent = lambda event: self.change_page(event, "summary") # SUMMARY PRESSABLE ICON
         self.homepage.newtask_btn.clicked.connect(self.createdialog.show)
         
-    def change_page(self,event,current_page):
+    def change_page(self, event, current_page):
         eval('self.{}_active_tab.setStyleSheet("background-color: transparent;border: none;")'.format(self.current_page))
-        # reseting image after deselect
+
+        # resetting image after deselect
         eval('self.{}_icon.setPixmap(QtGui.QPixmap("images/{}.png"))'.format(self.current_page,self.current_page))
         eval('self.{}_tab.setStyleSheet("background-color: transparent;border: none;")'.format(self.current_page))
         eval("self.{}page.hide()".format(self.current_page))
         self.current_page = current_page
+
         # after initial tab side color
-        eval('self.{}_active_tab.setStyleSheet("background-color: {};border: none;")'.format(self.current_page,globalStyles["primary"]))
-        # grabing same image for selected tab
-        eval('self.{}_icon.setPixmap(QtGui.QPixmap("images/{}_alt.png"))'.format(self.current_page,self.current_page))
+        eval('self.{}_active_tab.setStyleSheet("background-color: {};border: none;")'.format(self.current_page, globalStyles["primary"]))
+
+        # grabbing same image for selected tab
+        eval('self.{}_icon.setPixmap(QtGui.QPixmap("images/{}_alt.png"))'.format(self.current_page, self.current_page))
+
         # after initial tab side background color
-        eval('self.{}_tab.setStyleSheet("background-color: {};border: none;")'.format(self.current_page,globalStyles["primaryAscent"]))
+        eval('self.{}_tab.setStyleSheet("background-color: {};border: none;")'.format(self.current_page, globalStyles["primaryAscent"]))
         eval("self.{}page.show()".format(self.current_page))
 
     def create_task(self):
@@ -158,18 +164,12 @@ class MainWindow(QtWidgets.QMainWindow):
                     self.homepage.stop_all_tasks,
                     self.homepage.scrollAreaWidgetContents)
                 self.homepage.verticalLayout.addWidget(tab)
-                spacerItem = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum,
-                                                   QtWidgets.QSizePolicy.Expanding)
+                spacerItem = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
                 self.homepage.verticalLayout.addItem(spacerItem)
-
-            # (.*)
 
 
 if __name__ == "__main__":
     ui_app = QtWidgets.QApplication(sys.argv)
-    # trayIcon = QtWidgets.QSystemTrayIcon(QtGui.QIcon("images/birdbot.py"), parent=ui_app)
-    # trayIcon.setToolTip('Phoenix Bot')
-    # trayIcon.show()
     ui = MainWindow()
     ui.setWindowIcon(QtGui.QIcon("images/checkoutbot.PNG"))
     os._exit(ui_app.exec_())
