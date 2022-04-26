@@ -1,5 +1,3 @@
-# CSUF
-Group Members: Mahmoud Khafagy, Timothy Bryant, Ben Filler
 
 # Checkout-Bot
 
