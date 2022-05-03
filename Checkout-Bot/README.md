@@ -92,7 +92,7 @@ Target Signin error work around - Wait for target browser to launch, once it's r
       git clone https://github.com/Makhafagy/Checkout-Bot.git
       ```
       ```
-      cd Checkout-Bot
+      cd Checkout-Bot/Checkout-Bot
       ```
       ```
       python3 -m venv ./env
